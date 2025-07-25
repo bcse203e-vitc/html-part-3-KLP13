@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Feedback Form</title>
+</head>
+<body>
+    <h1>Website Feedback Form</h1>
+    <form action="#" method="post">
+        <table border="1" cellspacing="0" cellpadding="8">
+            <caption><strong>Your Feedback Matters</strong></caption>
+            <tbody>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Rate the Website:</td>
+                    <td>
+                        <label><input type="radio" name="rating" value="1"> ★</label>
+                        <label><input type="radio" name="rating" value="2"> ★★</label>
+                        <label><input type="radio" name="rating" value="3"> ★★★</label>
+                        <label><input type="radio" name="rating" value="4"> ★★★★</label>
+                        <label><input type="radio" name="rating" value="5"> ★★★★★</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="type">Type of Feedback:</label></td>
+                    <td>
+                        <select id="type" name="type" required>
+                            <option value="">--Select--</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="bug">Bug Report</option>
+                            <option value="compliment">Compliment</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="feedback">Feedback:</label></td>
+                    <td><textarea id="feedback" name="feedback" rows="4" cols="40" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>Would you recommend us?</td>
+                    <td>
+                        <input type="radio" id="recommendYes" name="recommend" value="Yes" required>
+                        <label for="recommendYes">Yes</label>
+                        <input type="radio" id="recommendNo" name="recommend" value="No">
+                        <label for="recommendNo">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
